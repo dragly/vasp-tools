@@ -3,16 +3,13 @@ from sys import argv
 import shutil
 import subprocess
 rootdir = argv[1]
-
+a = float(argv[2])
+astep = float(argv[3])
+runs= float(argv[4])
 runsdir = rootdir + "_runs"
 
 if not os.path.exists(runsdir):
     os.makedirs(runsdir)
-
-runs = 5
-
-a = 2.6
-astep = 0.2
 
 poscar = []
 
